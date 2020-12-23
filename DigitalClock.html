@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="DC.css">
+</head>
+
+<body>
+    <div id="dc">
+        <div id="time">
+            <div>
+                <span id="hour">00</span>
+                <span class="hr">HOURS</span>
+            </div>
+            <div>
+                <span id="min">00</span>
+                <span class="min">MINUTES</span>
+            </div>
+            <div>
+                <span id="sec">00</span>
+                <span class="sec">SECONDS</span>
+            </div>
+            <div>
+                <span id="ap"></span>
+                <span class="ap">AM/PM</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clock() {
+            var hour = document.getElementById("hour");
+            var min = document.getElementById("min");
+            var sec = document.getElementById("sec");
+            var a = document.getElementById("ap");
+
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
+
+            if (h > 12) {
+                hour.innerHTML = h - 12;
+            }
+            else {
+                hour.innerHTML = h;
+            }
+            min.innerHTML = m;
+            sec.innerHTML = s;
+            if (h >= 12) {
+                a.innerHTML = "PM";
+            }
+            else {
+                a.innerHTML = "AM";
+            }
+        }
+        var time = setInterval(clock, 1000);
+
+    </script>
+
+</body>
+
+</html>
