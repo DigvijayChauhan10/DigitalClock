@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(clement-m-h7vKkZNNThE-unsplash.jpg);
+    /*background-image: url(SB.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+#dc #time{
+    display: flex;
+}
+
+#dc #time div{
+    position: relative;
+    margin:0 10px;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0004);
+}
+
+
+#dc #time div span{
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:150px;
+    border-radius: 20px;
+    color:white;
+    font-size:5em;
+}
+#hour,.hr{
+    background:#e91e63;
+}
+#min,.min{
+    background:#5d02ff;
+}
+#sec,.sec{
+    background:#e64a19;
+}
+
+#ap,.ap{
+    background:#00bcd4;
+}
+#dc #time div span:nth-child(2){
+    height:50px;
+    font-size: 2em;
+    margin-top: 5px;
+}
